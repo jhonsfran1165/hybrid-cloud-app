@@ -46,6 +46,6 @@ jobs:
         with:
           push: true
           tags: jhonsfran/botney-trap:${{ needs.semantic-release.outputs.new_release_version }}
-          file: ./botney-trap/app/Dockerfile
+          file: .app/Dockerfile
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}

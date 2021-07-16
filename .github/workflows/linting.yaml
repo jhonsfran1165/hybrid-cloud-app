@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: hadolint/hadolint-action@v1.5.0
         with:
-          dockerfile: ./botney-trap/app/Dockerfile
+          dockerfile: ./app/Dockerfile

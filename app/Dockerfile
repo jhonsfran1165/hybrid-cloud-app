@@ -13,8 +13,8 @@ RUN chown node:node .
 # Install the latest version of NPM
 RUN npm i -g npm@latest
 
-COPY --chown=node:node ./botney-trap/app/package.json ./botney-trap/app/package-lock.json ./
-COPY --chown=node:node ./botney-trap/app/src ./src
+COPY --chown=node:node ./app/package.json ./app/package-lock.json ./
+COPY --chown=node:node ./app/src ./src
 
 USER node
 
